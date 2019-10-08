@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/abc_action_bar_content_inset_material">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtBarcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:singleLine="true"
+        android:hint="Enter Barcode"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/abc_action_bar_content_inset_material"
+            android:layout_height="wrap_content" android:text="Enter Dimms Width X Height X Depth"/>
+    </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:weightSum="3">
+               <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edtWidth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+        android:hint="Width"/>
+        
+    </android.support.design.widget.TextInputLayout>
+             <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edtHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+        android:hint="Height"/>
+        
+    </android.support.design.widget.TextInputLayout>
+             <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/edtDepth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal"
+        android:hint="Depth"/>
+        
+    </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+            android:gravity="bottom">
+            <Button
+                android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:text="reset"
+                android:textAllCaps="true"
+                android:layout_alignParentLeft="true"
+        android:paddingLeft="@dimen/abc_action_button_min_width_overflow_material"
+            android:paddingRight="@dimen/abc_action_button_min_width_overflow_material"
+            android:paddingTop="@dimen/abc_action_bar_content_inset_material"
+            android:paddingBottom="@dimen/abc_action_bar_content_inset_material"/>
+    <Button
+                android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:text="save"
+                android:textAllCaps="true"
+                android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/abc_action_button_min_width_overflow_material"
+            android:paddingRight="@dimen/abc_action_button_min_width_overflow_material"
+            android:paddingTop="@dimen/abc_action_bar_content_inset_material"
+            android:paddingBottom="@dimen/abc_action_bar_content_inset_material"/>
+</RelativeLayout>
+    </LinearLayout>
+    
+</LinearLayout>
